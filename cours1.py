@@ -14,7 +14,7 @@ def verifier_code():
 
 # Fonction pour afficher le message secret
 def afficher_message_secret():
-    message_secret = "Félicitations !\nVous avez découvert le code.  Voici le lien vers un mystérieux carnet de notes : "
+    message_secret = "Félicitations !\nVous avez découvert le code.  Voici le code pour le quizz : \n 03985029"
     message.config(text=message_secret, font=("Helvetica", 16, "italic"), fg="blue")
 
 
@@ -34,11 +34,11 @@ code_correct = 153
 
 # Opérations et indices
 indices = [
-    {"operation": "2 * 5 - 3", "texte": "7 9 3 : un chiffre est correct et à la bonne place"},
-    {"operation": "20 / 2 + 4", "texte": "7 2 5 : un chiffre est correct et à la mauvaise place"},
-    {"operation": "8 + 12 - 7", "texte": "3 1 7 : deux chiffres sont corrects mais à la mauvaise place"},
-    {"operation": "9 * 3 - 10", "texte": "8 4 9 : aucun de ces chiffres n'est correct"},
-    {"operation": "15 / 3 + 5", "texte": "8 9 1 : un chiffre est correct et à la mauvaise place"}
+    {"operation": "20 * 52 - 36", "texte": "7 9 3 : un chiffre est correct et à la bonne place"},
+    {"operation": "20 / (23 + 17)", "texte": "7 2 5 : un chiffre est correct et à la mauvaise place"},
+    {"operation": "(89 + 12) * 7", "texte": "3 1 7 : deux chiffres sont corrects mais à la mauvaise place"},
+    {"operation": "9 * (3 - 10) * (10 - 35)", "texte": "8 4 9 : aucun de ces chiffres n'est correct"},
+    {"operation": "15 / (3 + 5) * 19", "texte": "8 9 1 : un chiffre est correct et à la mauvaise place"}
 ]
 
 # Création de la fenêtre Tkinter
